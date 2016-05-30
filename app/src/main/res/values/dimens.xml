@@ -1,0 +1,9 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="ancho_picker">300dp</dimen>
+    <dimen name="largo_picker">200dp</dimen>
+
+    <dimen name="txtTitulo">20dp</dimen>
+</resources>

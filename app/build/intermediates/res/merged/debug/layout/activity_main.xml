@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.lgcs.form.MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tiNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutMode="clipBounds"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/inputNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_nombre"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <DatePicker
+        android:layout_width="@dimen/ancho_picker"
+        android:layout_height="@dimen/largo_picker"
+        android:calendarViewShown="false"
+        android:clickable="false"
+        android:datePickerMode="spinner"
+        android:calendarTextColor="@color/colorAccent"
+        android:layout_below="@id/tiNombre"
+        android:id="@+id/dpFecha"
+        android:contextClickable="false"
+        android:spinnersShown="true"
+        >
+        <Button
+            android:id="@+id/btnSet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="@string/btn_set"
+            android:theme="@style/MyApp.Button.Red"/>
+        </DatePicker>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tiTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutMode="clipBounds"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_below="@id/dpFecha"
+        android:contextClickable="false">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/inputTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_telefono"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tiEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutMode="clipBounds"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_below="@id/tiTelefono">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/inputEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_email"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tiDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutMode="clipBounds"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_below="@id/tiEmail">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/inputDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_descripcion"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnSiguiente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_siguiente"
+        android:layout_alignParentBottom="true"
+        android:theme="@style/MyApp.Button.Red" />
+
+</RelativeLayout>
